@@ -1,23 +1,29 @@
 ---
-title: 'Programming Portfolios'
-publishedAt: '2017-02-24'
-summary: 'Tips for creating a portfolio that stands out.'
+title: '[FCJ_2024] Integration from SharePoint to AWS Bedrock using AWS Cloud Infrastructure and Terraform'
+publishedAt: '2024-09-06'
+author: 'My Phan & An Tran'
+summary: 'First Workshop submiited to AWS FCJ'
 ---
 
-Every programmer should have a portfolio. When I'm hiring, I want to see what you've built. I want to see your code. I want to see how you write.
+This AWS workshop was created by [My Phan](https://www.linkedin.com/in/pletumy/) and [An Tran](https://www.linkedin.com/in/an-tr%E1%BA%A7n-095608321/). We've worked together to put together a useful and practical learning experience. We hope it serves as a helpful resource for anyone looking to explore cloud technologies.
 
 <Image
   alt={`Google`}
-  src={`/images/content-marketing-personal-brand/google.gif`}
+  src={`/images/aws-1/infra-diagram.png`}
   width={1190}
   height={108}
 />
 
-Those who had a portfolio on their resume where I could learn more about them, their projects, and the code they've written were more likely to get a response from me when interviewing.
+## Overview
 
-## Why write?
+This project demonstrates an end-to-end integration where data from SharePoint is processed using AWS Cloud services, with automation and infrastructure management handled by Terraform. The workflow involves various AWS services like Lambda, S3, Step Functions, and AWS Bedrock. The goal is to efficiently process data from SharePoint and prepare Knowledge bases for GenAI chatbot.
 
-After finishing my post, [How Stripe Designs Beautiful Websites](/blog/how-stripe-designs-beautiful-websites), I posted a link to the article on [Reddit](https://www.reddit.com/) and [Hacker News](https://news.ycombinator.com/).
+## Prerequisites
+
+- **SharePoint Access:** Ensure access to the SharePoint environment where data will be uploaded.
+- **AWS Account:** A valid AWS account with access to the following services: AWS Lambda, Amazon S3, AWS Step Functions, AWS Bedrock, AWS EventBridge.
+- **Terraform Setup:** Terraform should be installed and configured to manage the AWS infrastructure.
+- **IAM Roles and Permissions:** Correct IAM roles with necessary permissions for Lambda, S3, and Bedrock should be in place to execute the tasks.
 
 <Image
   alt={`Article Initially Posted`}
@@ -49,7 +55,29 @@ This traffic created two notable events:
 - My average site traffic doubled
 - My portfolio moved from the 3rd page of Google to the 1st
 
-## What to include
+## Detailed Explanation
+
+### 1. Terraform for Infrastructure Management
+
+This traffic created two notable events:
+
+- My average site traffic doubled
+- My portfolio moved from the 3rd page of Google to the 1st
+
+### 2. SharePoint Data Source
+
+This traffic created two notable events:
+
+- My average site traffic doubled
+- My portfolio moved from the 3rd page of Google to the 1st
+
+### 3. AWS Lambda Processing
+### 4. Storing Processed Data in Amazon S3 
+### 5. Further Data Processing by AWS Lambda 
+### 6. Sending Data to AWS Bedrock
+
+
+
 
 - **Show code:** Ideally links to GitHub repositories, including live demo URLs where I can see the things you've built. I'll go explore the codebase and see what tech choices you used. Bonus points if you wrote about _why_ you picked that tech stack.
 - **Write stuff:** An average engineer who can write well and explain concepts clearly is better than an excellent engineer who can't communicate with their coworkers. Show me you are a clear writer, which is especially important if the role is remote.
