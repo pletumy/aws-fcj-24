@@ -11,7 +11,7 @@ runtime.loadChunk("server/chunks/ssr/node_modules_tr46_1a859a._.js");
 runtime.loadChunk("server/chunks/ssr/node_modules_bignumber_js_bignumber_da4d7f.js");
 runtime.loadChunk("server/chunks/ssr/node_modules_google-auth-library_56a8e6._.js");
 runtime.loadChunk("server/chunks/ssr/node_modules_@googleapis_youtube_build_a4e018._.js");
-runtime.loadChunk("server/chunks/ssr/node_modules_postgres_src_b9a524._.js");
+// runtime.loadChunk("server/chunks/ssr/node_modules_postgres_src_b9a524._.js");
 runtime.loadChunk("server/chunks/ssr/node_modules_@auth_core_3715d2._.js");
 runtime.loadChunk("server/chunks/ssr/node_modules_jose_dist_node_esm_0cc8d8._.js");
 runtime.loadChunk("server/chunks/ssr/node_modules_44a071._.js");

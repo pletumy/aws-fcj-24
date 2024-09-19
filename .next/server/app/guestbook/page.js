@@ -7,7 +7,7 @@ runtime.loadChunk("server/chunks/ssr/node_modules_tr46_1a859a._.js");
 runtime.loadChunk("server/chunks/ssr/node_modules_bignumber_js_bignumber_da4d7f.js");
 runtime.loadChunk("server/chunks/ssr/node_modules_google-auth-library_56a8e6._.js");
 runtime.loadChunk("server/chunks/ssr/node_modules_@googleapis_youtube_build_a4e018._.js");
-runtime.loadChunk("server/chunks/ssr/node_modules_postgres_src_b9a524._.js");
+// runtime.loadChunk("server/chunks/ssr/node_modules_postgres_src_b9a524._.js");
 runtime.loadChunk("server/chunks/ssr/node_modules_94fd52._.js");
 runtime.loadChunk("server/chunks/ssr/[root of the server]__593af4._.js");
 runtime.getOrInstantiateRuntimeModule("[project]/.next-internal/server/app/guestbook/page/actions.js { ACTIONS_MODULE0 => \"[project]/app/db/actions.ts [app-rsc] (ecmascript, action, ecmascript)\", ACTIONS_MODULE1 => \"[project]/app/db/queries.tsx [app-rsc] (ecmascript)\" } [app-rsc] (ecmascript)", CHUNK_PUBLIC_PATH);

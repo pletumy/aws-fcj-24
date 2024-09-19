@@ -19,17 +19,8 @@ var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$link
 ;
 ;
 const navItems = {
-    '/': {
-        name: 'home'
-    },
-    '/work': {
-        name: 'work'
-    },
     '/blog': {
         name: 'blog'
-    },
-    '/guestbook': {
-        name: 'guestbook'
     }
 };
 function Navbar() {
@@ -49,28 +40,28 @@ function Navbar() {
                             children: name
                         }, path, false, {
                             fileName: "[project]/app/components/nav.tsx",
-                            lineNumber: 29,
+                            lineNumber: 20,
                             columnNumber: 17
                         }, this);
                     })
                 }, void 0, false, {
                     fileName: "[project]/app/components/nav.tsx",
-                    lineNumber: 26,
+                    lineNumber: 17,
                     columnNumber: 11
                 }, this)
             }, void 0, false, {
                 fileName: "[project]/app/components/nav.tsx",
-                lineNumber: 22,
+                lineNumber: 13,
                 columnNumber: 9
             }, this)
         }, void 0, false, {
             fileName: "[project]/app/components/nav.tsx",
-            lineNumber: 21,
+            lineNumber: 12,
             columnNumber: 7
         }, this)
     }, void 0, false, {
         fileName: "[project]/app/components/nav.tsx",
-        lineNumber: 20,
+        lineNumber: 11,
         columnNumber: 5
     }, this);
 }
@@ -547,27 +538,27 @@ let yt = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$g
     version: 'v3',
     auth: googleAuth
 });
-async function getBlogViews() {
-    if (!process.env.POSTGRES_URL) {
-        return [];
-    }
-    (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$cache$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["unstable_noStore"])();
-    let views = await __TURBOPACK__imported__module__$5b$project$5d2f$app$2f$db$2f$postgres$2e$ts__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["sql"]`
-    SELECT count
-    FROM views
-  `;
-    return views.reduce((acc, curr)=>acc + Number(curr.count), 0);
-}
-async function getViewsCount() {
-    if (!process.env.POSTGRES_URL) {
-        return [];
-    }
-    (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$cache$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["unstable_noStore"])();
-    return __TURBOPACK__imported__module__$5b$project$5d2f$app$2f$db$2f$postgres$2e$ts__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["sql"]`
-    SELECT slug, count
-    FROM views
-  `;
-}
+// async function getBlogViews() {
+//     if (!process.env.POSTGRES_URL) {
+//         return [];
+//     }
+//     (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$cache$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["unstable_noStore"])();
+//     let views = await __TURBOPACK__imported__module__$5b$project$5d2f$app$2f$db$2f$postgres$2e$ts__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["sql"]`
+//     SELECT count
+//     FROM views
+//   `;
+//     return views.reduce((acc, curr)=>acc + Number(curr.count), 0);
+// }
+// async function getViewsCount() {
+//     if (!process.env.POSTGRES_URL) {
+//         return [];
+//     }
+//     (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$cache$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["unstable_noStore"])();
+//     return __TURBOPACK__imported__module__$5b$project$5d2f$app$2f$db$2f$postgres$2e$ts__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["sql"]`
+//     SELECT slug, count
+//     FROM views
+//   `;
+// }
 const getLeeYouTubeSubs = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$cache$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["unstable_cache"])((0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$build$2f$webpack$2f$loaders$2f$next$2d$flight$2d$loader$2f$server$2d$reference$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["registerServerReference"])("81032f287b1bab800a20536bdf12c31154d79a2f", $$ACTION_0), [
     'leerob-youtube-subs'
 ], {
@@ -602,18 +593,18 @@ async function $$ACTION_1() {
     let channel = response.data.items[0];
     return Number(channel?.statistics?.subscriberCount).toLocaleString();
 }
-async function getGuestbookEntries() {
-    if (!process.env.POSTGRES_URL) {
-        return [];
-    }
-    (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$cache$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["unstable_noStore"])();
-    return __TURBOPACK__imported__module__$5b$project$5d2f$app$2f$db$2f$postgres$2e$ts__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["sql"]`
-    SELECT id, body, created_by, updated_at
-    FROM guestbook
-    ORDER BY created_at DESC
-    LIMIT 100
-  `;
-}
+// async function getGuestbookEntries() {
+//     if (!process.env.POSTGRES_URL) {
+//         return [];
+//     }
+//     (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$cache$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["unstable_noStore"])();
+//     return __TURBOPACK__imported__module__$5b$project$5d2f$app$2f$db$2f$postgres$2e$ts__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["sql"]`
+//     SELECT id, body, created_by, updated_at
+//     FROM guestbook
+//     ORDER BY created_at DESC
+//     LIMIT 100
+//   `;
+// }
 ;
 (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$build$2f$webpack$2f$loaders$2f$next$2d$flight$2d$loader$2f$action$2d$validate$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["ensureServerEntryExports"])([
     getBlogViews,

@@ -19,17 +19,8 @@ var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$link
 ;
 ;
 const navItems = {
-    '/': {
-        name: 'home'
-    },
-    '/work': {
-        name: 'work'
-    },
     '/blog': {
         name: 'blog'
-    },
-    '/guestbook': {
-        name: 'guestbook'
     }
 };
 function Navbar() {
@@ -49,28 +40,28 @@ function Navbar() {
                             children: name
                         }, path, false, {
                             fileName: "[project]/app/components/nav.tsx",
-                            lineNumber: 29,
+                            lineNumber: 20,
                             columnNumber: 17
                         }, this);
                     })
                 }, void 0, false, {
                     fileName: "[project]/app/components/nav.tsx",
-                    lineNumber: 26,
+                    lineNumber: 17,
                     columnNumber: 11
                 }, this)
             }, void 0, false, {
                 fileName: "[project]/app/components/nav.tsx",
-                lineNumber: 22,
+                lineNumber: 13,
                 columnNumber: 9
             }, this)
         }, void 0, false, {
             fileName: "[project]/app/components/nav.tsx",
-            lineNumber: 21,
+            lineNumber: 12,
             columnNumber: 7
         }, this)
     }, void 0, false, {
         fileName: "[project]/app/components/nav.tsx",
-        lineNumber: 20,
+        lineNumber: 11,
         columnNumber: 5
     }, this);
 }
@@ -305,7 +296,7 @@ function Page() {
         children: [
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("h1", {
                 className: "font-medium text-2xl mb-8 tracking-tighter",
-                children: "my portfolio"
+                children: "AWS FCJ Bootcamp 2024"
             }, void 0, false, {
                 fileName: "[project]/app/page.tsx",
                 lineNumber: 4,
@@ -313,8 +304,30 @@ function Page() {
             }, this),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
                 className: "prose prose-neutral dark:prose-invert",
-                children: "This is your new portfolio."
-            }, void 0, false, {
+                children: [
+                    "A simple showcase by ",
+                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("a", {
+                        href: "mailto:atran8262@gmail.com",
+                        className: "text-blue-500 underline",
+                        children: "An Tran"
+                    }, void 0, false, {
+                        fileName: "[project]/app/page.tsx",
+                        lineNumber: 6,
+                        columnNumber: 30
+                    }, this),
+                    " and ",
+                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("a", {
+                        href: "mailto:ple.tumy@gmail.com",
+                        className: "text-blue-500 underline",
+                        children: "My Phan"
+                    }, void 0, false, {
+                        fileName: "[project]/app/page.tsx",
+                        lineNumber: 6,
+                        columnNumber: 119
+                    }, this),
+                    '. Click on "Blog" to view submitted workshops.'
+                ]
+            }, void 0, true, {
                 fileName: "[project]/app/page.tsx",
                 lineNumber: 5,
                 columnNumber: 7
